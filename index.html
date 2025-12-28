@@ -13,7 +13,6 @@
 <body>
   <a class="skip" href="#shop">Skip to listings</a>
 
-  <!-- Top Bar -->
   <header class="topbar">
     <div class="wrap topbar__inner">
       <div class="brand">
@@ -26,13 +25,12 @@
 
       <nav class="nav">
         <a href="#shop">Fish</a>
-        <a href="#care">Care promise</a>
+        <a href="#care">Care</a>
         <a class="btn btn--whatsapp" id="waTop" href="#" rel="noopener">WhatsApp</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
   <main>
     <section class="hero">
       <div class="wrap hero__grid">
@@ -40,7 +38,7 @@
           <p class="pill">NEW STOCK WEEKLY • HAND-PICKED</p>
           <h1>Exotic fish with a <span class="grad">restaurant-fresh</span> vibe.</h1>
           <p class="lead">
-            Browse today’s selection. Tap a fish for details and care guidance, then message us on WhatsApp to reserve.
+            Browse today’s selection. Tap a fish for details + care guide, then message us on WhatsApp to reserve.
           </p>
 
           <div class="hero__cta">
@@ -79,24 +77,236 @@
       <div class="hero__wave" aria-hidden="true"></div>
     </section>
 
-    <!-- Listings header (NO filters) -->
+    <!-- Listings header (no filters) -->
     <section class="controls" id="shop">
       <div class="wrap controls__inner">
         <div>
           <h2 class="sectionTitle">Today’s Fish</h2>
-          <p class="sectionSub">Tap a listing for details and care guidance.</p>
+          <p class="sectionSub">Tap a fish to view description + care guide.</p>
         </div>
       </div>
     </section>
 
-    <!-- Gallery Grid -->
+    <!-- STATIC FISH GRID -->
     <section class="grid">
       <div class="wrap">
-        <div id="cards" class="cards" aria-live="polite"></div>
+        <div class="cards">
+
+          <a class="card" href="#fish-discus" aria-label="View Discus details">
+            <div class="card__img" style="background-image:url('https://images.unsplash.com/photo-1544551763-cede2d235d03?auto=format&fit=crop&w=1200&q=80')"></div>
+            <div class="card__body">
+              <div class="card__title">Discus — Red Turquoise</div>
+              <div class="card__meta">
+                <div class="price">£75</div>
+                <div class="size">10–12 cm</div>
+              </div>
+            </div>
+          </a>
+
+          <a class="card" href="#fish-clownfish" aria-label="View Clownfish details">
+            <div class="card__img" style="background-image:url('https://images.unsplash.com/photo-1582966772680-860e372bb558?auto=format&fit=crop&w=1200&q=80')"></div>
+            <div class="card__body">
+              <div class="card__title">Designer Clownfish — Pair</div>
+              <div class="card__meta">
+                <div class="price">£95</div>
+                <div class="size">5–7 cm</div>
+              </div>
+            </div>
+          </a>
+
+          <a class="card" href="#fish-tang" aria-label="View Yellow Tang details">
+            <div class="card__img" style="background-image:url('https://images.unsplash.com/photo-1559757175-5700dde67536?auto=format&fit=crop&w=1200&q=80')"></div>
+            <div class="card__body">
+              <div class="card__title">Yellow Tang</div>
+              <div class="card__meta">
+                <div class="price">£120</div>
+                <div class="size">10–12 cm</div>
+              </div>
+            </div>
+          </a>
+
+          <a class="card" href="#fish-betta" aria-label="View Betta details">
+            <div class="card__img" style="background-image:url('https://images.unsplash.com/photo-1520301255226-bf5f144451a3?auto=format&fit=crop&w=1200&q=80')"></div>
+            <div class="card__body">
+              <div class="card__title">Betta — Halfmoon Male</div>
+              <div class="card__meta">
+                <div class="price">£22</div>
+                <div class="size">6–7 cm</div>
+              </div>
+            </div>
+          </a>
+
+          <a class="card" href="#fish-acara" aria-label="View Electric Blue Acara details">
+            <div class="card__img" style="background-image:url('https://images.unsplash.com/photo-1518991791750-749fdb00bc63?auto=format&fit=crop&w=1200&q=80')"></div>
+            <div class="card__body">
+              <div class="card__title">Electric Blue Acara</div>
+              <div class="card__meta">
+                <div class="price">£28</div>
+                <div class="size">8–10 cm</div>
+              </div>
+            </div>
+          </a>
+
+          <a class="card" href="#fish-ram" aria-label="View German Blue Ram details">
+            <div class="card__img" style="background-image:url('https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=1200&q=80')"></div>
+            <div class="card__body">
+              <div class="card__title">German Blue Ram</div>
+              <div class="card__meta">
+                <div class="price">£18</div>
+                <div class="size">4–6 cm</div>
+              </div>
+            </div>
+          </a>
+
+          <a class="card" href="#fish-cardinals" aria-label="View Cardinal Tetra details">
+            <div class="card__img" style="background-image:url('https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=1200&q=80')"></div>
+            <div class="card__body">
+              <div class="card__title">Cardinal Tetra (School of 10)</div>
+              <div class="card__meta">
+                <div class="price">£35</div>
+                <div class="size">3–4 cm</div>
+              </div>
+            </div>
+          </a>
+
+          <a class="card" href="#fish-pleco" aria-label="View Bristlenose Pleco details">
+            <div class="card__img" style="background-image:url('https://images.unsplash.com/photo-1520763185298-1b434c919102?auto=format&fit=crop&w=1200&q=80')"></div>
+            <div class="card__body">
+              <div class="card__title">Bristlenose Pleco</div>
+              <div class="card__meta">
+                <div class="price">£16</div>
+                <div class="size">6–9 cm</div>
+              </div>
+            </div>
+          </a>
+
+          <a class="card" href="#fish-koi" aria-label="View Koi details">
+            <div class="card__img" style="background-image:url('https://images.unsplash.com/photo-1599819811279-d3b1b6b1f6e4?auto=format&fit=crop&w=1200&q=80')"></div>
+            <div class="card__body">
+              <div class="card__title">Koi — Show Grade</div>
+              <div class="card__meta">
+                <div class="price">£180</div>
+                <div class="size">18–22 cm</div>
+              </div>
+            </div>
+          </a>
+
+        </div>
+
+        <!-- DETAILS (clicking a fish jumps here) -->
+        <div style="height:30px"></div>
+
+        <section id="fish-discus" class="promise__card" style="margin-bottom:16px">
+          <h2>Discus — Red Turquoise • £75</h2>
+          <p>Classic centrepiece fish. Needs stable warm water and a mature tank.</p>
+          <ul class="ticks">
+            <li><strong>Tank:</strong> 250L+</li>
+            <li><strong>Temp:</strong> 28–30°C</li>
+            <li><strong>pH:</strong> 6.0–7.2</li>
+            <li><strong>Diet:</strong> Quality pellets + frozen</li>
+            <li><strong>Notes:</strong> Peaceful tankmates only; keep water pristine.</li>
+          </ul>
+        </section>
+
+        <section id="fish-clownfish" class="promise__card" style="margin-bottom:16px">
+          <h2>Designer Clownfish — Pair • £95</h2>
+          <p>Hardy marine favourite with huge personality.</p>
+          <ul class="ticks">
+            <li><strong>Tank:</strong> 100L+</li>
+            <li><strong>Temp:</strong> 24–26°C</li>
+            <li><strong>Salinity:</strong> 1.024–1.026 SG</li>
+            <li><strong>Diet:</strong> Marine pellets + frozen</li>
+            <li><strong>Notes:</strong> Can be territorial; great in stable reef systems.</li>
+          </ul>
+        </section>
+
+        <section id="fish-tang" class="promise__card" style="margin-bottom:16px">
+          <h2>Yellow Tang • £120</h2>
+          <p>Iconic reef grazer. Needs space and greens (nori).</p>
+          <ul class="ticks">
+            <li><strong>Tank:</strong> 300L+</li>
+            <li><strong>Temp:</strong> 24–26°C</li>
+            <li><strong>Salinity:</strong> 1.024–1.026 SG</li>
+            <li><strong>Diet:</strong> Nori + herbivore pellets</li>
+            <li><strong>Notes:</strong> Can be territorial with other tangs.</li>
+          </ul>
+        </section>
+
+        <section id="fish-betta" class="promise__card" style="margin-bottom:16px">
+          <h2>Betta — Halfmoon Male • £22</h2>
+          <p>Solo stunner. Warm, calm water and gentle flow.</p>
+          <ul class="ticks">
+            <li><strong>Tank:</strong> 20L+</li>
+            <li><strong>Temp:</strong> 25–28°C</li>
+            <li><strong>pH:</strong> 6.5–7.5</li>
+            <li><strong>Diet:</strong> Betta pellets + frozen</li>
+            <li><strong>Notes:</strong> Usually best kept alone.</li>
+          </ul>
+        </section>
+
+        <section id="fish-acara" class="promise__card" style="margin-bottom:16px">
+          <h2>Electric Blue Acara • £28</h2>
+          <p>Shimmering blue cichlid with calmer temperament than many cichlids.</p>
+          <ul class="ticks">
+            <li><strong>Tank:</strong> 200L+</li>
+            <li><strong>Temp:</strong> 24–28°C</li>
+            <li><strong>pH:</strong> 6.5–7.5</li>
+            <li><strong>Diet:</strong> Pellets + frozen</li>
+            <li><strong>Notes:</strong> Semi-aggressive during breeding; avoid tiny fish.</li>
+          </ul>
+        </section>
+
+        <section id="fish-ram" class="promise__card" style="margin-bottom:16px">
+          <h2>German Blue Ram • £18</h2>
+          <p>Beautiful dwarf cichlid. Needs clean, stable, warm water.</p>
+          <ul class="ticks">
+            <li><strong>Tank:</strong> 80L+</li>
+            <li><strong>Temp:</strong> 26–30°C</li>
+            <li><strong>pH:</strong> 5.5–7.0</li>
+            <li><strong>Diet:</strong> Small pellets + frozen</li>
+            <li><strong>Notes:</strong> Sensitive to poor water quality.</li>
+          </ul>
+        </section>
+
+        <section id="fish-cardinals" class="promise__card" style="margin-bottom:16px">
+          <h2>Cardinal Tetra (School of 10) • £35</h2>
+          <p>Classic planted tank schooling fish. Looks best in proper groups.</p>
+          <ul class="ticks">
+            <li><strong>Tank:</strong> 60L+</li>
+            <li><strong>Temp:</strong> 24–28°C</li>
+            <li><strong>pH:</strong> 5.5–7.2</li>
+            <li><strong>Diet:</strong> Micro pellets + frozen</li>
+            <li><strong>Notes:</strong> Avoid predators.</li>
+          </ul>
+        </section>
+
+        <section id="fish-pleco" class="promise__card" style="margin-bottom:16px">
+          <h2>Bristlenose Pleco • £16</h2>
+          <p>Great grazer (but still needs proper feeding).</p>
+          <ul class="ticks">
+            <li><strong>Tank:</strong> 80L+</li>
+            <li><strong>Temp:</strong> 23–27°C</li>
+            <li><strong>pH:</strong> 6.5–7.8</li>
+            <li><strong>Diet:</strong> Algae wafers + veg</li>
+            <li><strong>Notes:</strong> Provide driftwood + hiding spots.</li>
+          </ul>
+        </section>
+
+        <section id="fish-koi" class="promise__card">
+          <h2>Koi — Show Grade • £180</h2>
+          <p>Pond fish / very large systems only. Grows fast.</p>
+          <ul class="ticks">
+            <li><strong>Tank:</strong> Pond / 1,000L+ system</li>
+            <li><strong>Temp:</strong> 10–25°C</li>
+            <li><strong>pH:</strong> 7.0–8.5</li>
+            <li><strong>Diet:</strong> Koi pellets + seasonal feeding</li>
+            <li><strong>Notes:</strong> Needs serious filtration + oxygenation.</li>
+          </ul>
+        </section>
+
       </div>
     </section>
 
-    <!-- Care promise -->
     <section class="promise" id="care">
       <div class="wrap promise__inner">
         <div class="promise__card">
@@ -105,20 +315,13 @@
             Fish aren’t décor — they’re pets. We’ll always prioritise appropriate setups,
             stable water parameters, and responsible stocking.
           </p>
-          <ul class="ticks">
-            <li>Clear care guides per fish</li>
-            <li>Compatibility notes</li>
-            <li>Advice on acclimation, diet, and maintenance</li>
-          </ul>
 
           <a class="btn btn--whatsapp btn--big" id="waBottom" href="#" rel="noopener">
             <span class="waDot" aria-hidden="true"></span>
             WhatsApp Kong Exotics
           </a>
 
-          <p class="tiny">
-            Replace the WhatsApp number in <code>script.js</code>.
-          </p>
+          <p class="tiny">Replace the WhatsApp number in <code>script.js</code>.</p>
         </div>
 
         <div class="promise__side" aria-hidden="true">
@@ -138,7 +341,6 @@
     </section>
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="wrap footer__inner">
       <div>
@@ -151,50 +353,6 @@
       </div>
     </div>
   </footer>
-
-  <!-- Modal -->
-  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
-    <div class="modal__backdrop" data-close></div>
-
-    <div class="modal__panel" role="document">
-      <button class="modal__close" aria-label="Close" data-close>✕</button>
-
-      <div class="modal__grid">
-        <div class="modal__media">
-          <img id="modalImg" alt="" />
-          <div class="modal__chips" id="modalChips"></div>
-        </div>
-
-        <div class="modal__content">
-          <h3 id="modalTitle"></h3>
-          <p class="modal__price" id="modalPrice"></p>
-          <p class="modal__desc" id="modalDesc"></p>
-
-          <div class="care">
-            <div class="care__title">Care Guide</div>
-            <div class="care__grid" id="modalCare"></div>
-          </div>
-
-          <div class="compat">
-            <div class="compat__title">Temperament & Compatibility</div>
-            <p id="modalCompat"></p>
-          </div>
-
-          <div class="modal__actions">
-            <a class="btn btn--whatsapp btn--big" id="modalWhatsApp" href="#" rel="noopener">
-              <span class="waDot" aria-hidden="true"></span>
-              WhatsApp to reserve this fish
-            </a>
-            <button class="btn btn--ghost" data-close>Back to listings</button>
-          </div>
-
-          <p class="tiny">
-            Availability changes quickly — WhatsApp is the fastest way to confirm.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <script src="./script.js"></script>
 </body>
