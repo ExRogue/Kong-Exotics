@@ -2,260 +2,290 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Kong Exotics — Premium Exotic Fish</title>
-  <meta name="description" content="Kong Exotics — premium exotic fish with care guidance. Message us on WhatsApp to order." />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Kong Exotics — colourful, premium exotic fish. Browse availability and WhatsApp to order." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%90%9F%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <link rel="stylesheet" href="./styles.css" />
 </head>
 
 <body>
-  <div class="bg-blob blob-a" aria-hidden="true"></div>
-  <div class="bg-blob blob-b" aria-hidden="true"></div>
+  <a class="skip" href="#shop">Skip to listings</a>
 
-  <header class="header">
-    <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="Kong Exotics Home">
-        <span class="brand-mark">🪸</span>
-        <span class="brand-text">
-          <span class="brand-name">Kong Exotics</span>
-          <span class="brand-tag">Exotic Fish • Fresh Stock • Care Included</span>
-        </span>
-      </a>
+  <!-- Top Bar -->
+  <header class="topbar">
+    <div class="wrap topbar__inner">
+      <div class="brand">
+        <div class="brand__mark" aria-hidden="true">🐠</div>
+        <div class="brand__text">
+          <div class="brand__name">Kong Exotics</div>
+          <div class="brand__tag">Exotic fish • Fresh arrivals • WhatsApp ordering</div>
+        </div>
+      </div>
 
       <nav class="nav">
-        <a href="#gallery">Gallery</a>
+        <a href="#shop">Fish</a>
         <a href="#how">How it works</a>
-        <a href="#faq">FAQ</a>
+        <a href="#care">Care promise</a>
+        <a class="btn btn--whatsapp" id="waTop" href="#" rel="noopener">WhatsApp</a>
       </nav>
-
-      <a id="whatsappTop" class="btn btn-primary" href="#" target="_blank" rel="noopener">
-        WhatsApp to Order
-      </a>
     </div>
   </header>
 
-  <main id="top">
+  <!-- Hero -->
+  <main>
     <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-copy">
-          <p class="chip">Restaurant-grade vibes. Aquarium-level care.</p>
-          <h1>Colourful, premium exotic fish — <span class="accent">ready for your tank</span>.</h1>
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="pill">NEW STOCK WEEKLY • HAND-PICKED</p>
+          <h1>Exotic fish with a <span class="grad">restaurant-fresh</span> vibe.</h1>
           <p class="lead">
-            Browse today’s selection below. Tap any fish to view full details, care guide, and feeding notes.
-            To order, just message us on WhatsApp (quickest response).
+            Browse what’s available, tap a fish for the full care guide, then message us on WhatsApp to reserve.
+            No complicated checkout. Just quick, human service.
           </p>
 
-          <div class="hero-cta">
-            <a id="whatsappHero" class="btn btn-primary btn-lg" href="#" target="_blank" rel="noopener">
-              Message on WhatsApp
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#shop">View today’s fish</a>
+            <a class="btn btn--whatsapp" id="waHero" href="#" rel="noopener">
+              <span class="waDot" aria-hidden="true"></span>
+              Reach us on WhatsApp
             </a>
-            <a class="btn btn-ghost btn-lg" href="#gallery">View Gallery</a>
           </div>
 
-          <div class="hero-badges">
-            <div class="badge">✅ Clear prices</div>
-            <div class="badge">✅ Care guidance</div>
-            <div class="badge">✅ Collection arranged</div>
+          <div class="hero__meta">
+            <div class="metaCard">
+              <div class="metaCard__big">12</div>
+              <div class="metaCard__small">Dummy listings to start</div>
+            </div>
+            <div class="metaCard">
+              <div class="metaCard__big">Fast</div>
+              <div class="metaCard__small">Click fish for care guide</div>
+            </div>
+            <div class="metaCard">
+              <div class="metaCard__big">Simple</div>
+              <div class="metaCard__small">Order via WhatsApp</div>
+            </div>
           </div>
         </div>
 
-        <div class="hero-card" role="img" aria-label="Decorative aquarium card">
-          <div class="hero-card-top">
-            <div class="mini-logo">KX</div>
-            <div class="mini-text">
-              <div class="mini-title">Today’s Highlight</div>
-              <div class="mini-sub">Tap a fish card below for details</div>
-            </div>
-          </div>
-
-          <div class="aqua-window">
-            <div class="bubble b1"></div>
-            <div class="bubble b2"></div>
-            <div class="bubble b3"></div>
-            <div class="bubble b4"></div>
-
-            <div class="fish f1" aria-hidden="true"></div>
-            <div class="fish f2" aria-hidden="true"></div>
-            <div class="fish f3" aria-hidden="true"></div>
-
-            <div class="seaweed s1" aria-hidden="true"></div>
-            <div class="seaweed s2" aria-hidden="true"></div>
-            <div class="seaweed s3" aria-hidden="true"></div>
-          </div>
-
-          <div class="hero-card-bottom">
-            <div class="note">
-              <strong>Tip:</strong> Keep your water stable. Fish hate drama more than people do.
-            </div>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="plate">
+            <div class="plate__shine"></div>
+            <div class="plate__img"></div>
+            <div class="plate__badge">⭐ Premium picks</div>
           </div>
         </div>
       </div>
+
+      <div class="hero__wave" aria-hidden="true"></div>
     </section>
 
-    <section id="gallery" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>Gallery</h2>
-          <p>12 sample listings. Click any fish to view full description + care guide.</p>
+    <!-- Controls -->
+    <section class="controls" id="shop">
+      <div class="wrap controls__inner">
+        <div>
+          <h2 class="sectionTitle">Today’s Fish</h2>
+          <p class="sectionSub">Tap a listing for full details, care guide, and suitability.</p>
         </div>
 
         <div class="toolbar">
-          <input id="search" class="search" type="search" placeholder="Search fish (e.g., 'Guppy', 'Cichlid', 'Tetra')…" />
-          <div class="filters">
-            <button class="pill is-active" data-filter="all">All</button>
-            <button class="pill" data-filter="freshwater">Freshwater</button>
-            <button class="pill" data-filter="marine">Marine</button>
-            <button class="pill" data-filter="beginner">Beginner</button>
-          </div>
-        </div>
+          <label class="field">
+            <span class="field__label">Search</span>
+            <input id="search" type="search" placeholder="e.g., clownfish, discus, cichlid…" autocomplete="off" />
+          </label>
 
-        <div id="grid" class="grid" aria-live="polite"></div>
+          <label class="field">
+            <span class="field__label">Category</span>
+            <select id="filterCategory">
+              <option value="all">All</option>
+              <option value="freshwater">Freshwater</option>
+              <option value="marine">Marine</option>
+              <option value="brackish">Brackish</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span class="field__label">Sort</span>
+            <select id="sortBy">
+              <option value="featured">Featured</option>
+              <option value="priceAsc">Price (low → high)</option>
+              <option value="priceDesc">Price (high → low)</option>
+              <option value="sizeAsc">Size (small → large)</option>
+              <option value="sizeDesc">Size (large → small)</option>
+            </select>
+          </label>
+        </div>
       </div>
     </section>
 
-    <section id="how" class="section section-alt">
-      <div class="container">
-        <div class="section-head">
-          <h2>How it works</h2>
+    <!-- Gallery Grid -->
+    <section class="grid">
+      <div class="wrap">
+        <div id="cards" class="cards" aria-live="polite"></div>
+
+        <div class="grid__note">
+          <div class="noteCard">
+            <div class="noteCard__icon" aria-hidden="true">🧪</div>
+            <div>
+              <div class="noteCard__title">Care-first approach</div>
+              <div class="noteCard__text">We’ll ask about tank size and parameters before confirming. No fish goes to a bad home — sorry, not sorry.</div>
+            </div>
+          </div>
+
+          <div class="noteCard">
+            <div class="noteCard__icon" aria-hidden="true">📦</div>
+            <div>
+              <div class="noteCard__title">Collection / Delivery</div>
+              <div class="noteCard__text">Add your collection/delivery details here later. For now it’s WhatsApp-based to keep it simple.</div>
+            </div>
+          </div>
+
+          <div class="noteCard">
+            <div class="noteCard__icon" aria-hidden="true">💬</div>
+            <div>
+              <div class="noteCard__title">Reserve fast</div>
+              <div class="noteCard__text">See something you like? Tap “WhatsApp to reserve” in the fish details.</div>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="info" id="how">
+      <div class="wrap">
+        <h2 class="sectionTitle">How it works</h2>
 
         <div class="steps">
           <div class="step">
-            <div class="step-no">1</div>
-            <h3>Browse</h3>
-            <p>Tap a fish card to read full care info, temperament, feeding, and ideal tank mates.</p>
+            <div class="step__num">1</div>
+            <div class="step__body">
+              <div class="step__title">Browse today’s listings</div>
+              <div class="step__text">Use search and filters to find the right fish for your setup.</div>
+            </div>
           </div>
+
           <div class="step">
-            <div class="step-no">2</div>
-            <h3>Message</h3>
-            <p>Hit WhatsApp and tell us the fish name + quantity. We’ll confirm availability and total.</p>
+            <div class="step__num">2</div>
+            <div class="step__body">
+              <div class="step__title">Tap for the full care guide</div>
+              <div class="step__text">You’ll see tank size, temperature, pH range, diet, temperament, and compatability notes.</div>
+            </div>
           </div>
+
           <div class="step">
-            <div class="step-no">3</div>
-            <h3>Collect</h3>
-            <p>Arrange collection. We’ll advise on acclimation so your new fish settle in smoothly.</p>
+            <div class="step__num">3</div>
+            <div class="step__body">
+              <div class="step__title">Message on WhatsApp</div>
+              <div class="step__text">Reserve instantly. We’ll confirm availability and guide you on best practice.</div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="faq" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>FAQ</h2>
+    <!-- Care promise -->
+    <section class="promise" id="care">
+      <div class="wrap promise__inner">
+        <div class="promise__card">
+          <h2>Our care promise</h2>
+          <p>
+            Fish aren’t décor — they’re pets with opinions. We’ll always prioritise appropriate setups,
+            stable water parameters, and responsible stocking.
+          </p>
+          <ul class="ticks">
+            <li>Clear care guides per fish</li>
+            <li>Compatibility notes (so your tank doesn’t turn into fight night)</li>
+            <li>Practical advice on cycling, diet, and maintenance</li>
+          </ul>
+
+          <a class="btn btn--whatsapp btn--big" id="waBottom" href="#" rel="noopener">
+            <span class="waDot" aria-hidden="true"></span>
+            WhatsApp Kong Exotics
+          </a>
+
+          <p class="tiny">
+            Tip: replace the dummy phone number in <code>script.js</code> with your dad’s WhatsApp number.
+          </p>
         </div>
 
-        <div class="faq">
-          <details>
-            <summary>Do you deliver?</summary>
-            <p>Currently set up for collection. If you want delivery, add your area when you WhatsApp and we’ll confirm options.</p>
-          </details>
-          <details>
-            <summary>Are prices fixed?</summary>
-            <p>Prices shown are per fish and can vary by size/stock. We’ll confirm the exact total on WhatsApp before you commit.</p>
-          </details>
-          <details>
-            <summary>I’m new to fishkeeping — what should I buy?</summary>
-            <p>Start with hardy beginner fish and a properly cycled tank. Message us what tank size you’ve got and we’ll suggest safe options.</p>
-          </details>
+        <div class="promise__side" aria-hidden="true">
+          <div class="bubble b1"></div>
+          <div class="bubble b2"></div>
+          <div class="bubble b3"></div>
+          <div class="bubble b4"></div>
+          <div class="menu">
+            <div class="menu__title">Today’s “specials”</div>
+            <div class="menu__item">Electric Blue Acara</div>
+            <div class="menu__item">Designer Clownfish Pair</div>
+            <div class="menu__item">Discus (Red Turquoise)</div>
+            <div class="menu__item">Koi (Show Grade)</div>
+          </div>
         </div>
-      </div>
-    </section>
-
-    <section class="section section-cta">
-      <div class="container cta-box">
-        <div>
-          <h2>Ready to order?</h2>
-          <p>Message us on WhatsApp with the fish name(s) and quantity. Fast replies.</p>
-        </div>
-        <a id="whatsappBottom" class="btn btn-primary btn-lg" href="#" target="_blank" rel="noopener">
-          WhatsApp Kong Exotics
-        </a>
       </div>
     </section>
   </main>
 
-  <!-- Sticky WhatsApp bar (mobile friendly) -->
-  <div class="sticky-bar">
-    <div class="sticky-text">
-      <strong>Kong Exotics</strong><span> • Tap to WhatsApp your order</span>
-    </div>
-    <a id="whatsappSticky" class="btn btn-primary" href="#" target="_blank" rel="noopener">WhatsApp</a>
-  </div>
-
-  <!-- Modal -->
-  <div id="modalBackdrop" class="modal-backdrop" aria-hidden="true"></div>
-  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalBody" hidden>
-    <button id="modalClose" class="modal-close" aria-label="Close">✕</button>
-    <div class="modal-header">
-      <div id="modalArt" class="modal-art" aria-hidden="true"></div>
-      <div class="modal-meta">
-        <h3 id="modalTitle"></h3>
-        <div class="meta-row">
-          <span id="modalType" class="tag"></span>
-          <span id="modalLevel" class="tag tag-2"></span>
-        </div>
-        <div class="price-row">
-          <div class="price" id="modalPrice"></div>
-          <div class="size" id="modalSize"></div>
-        </div>
-        <div class="modal-actions">
-          <a id="whatsappModal" class="btn btn-primary" href="#" target="_blank" rel="noopener">
-            WhatsApp about this fish
-          </a>
-          <button id="copyText" class="btn btn-ghost">Copy details</button>
-        </div>
-      </div>
-    </div>
-
-    <div id="modalBody" class="modal-body">
-      <div class="cols">
-        <div class="col">
-          <h4>Description</h4>
-          <p id="modalDesc"></p>
-
-          <h4>Temperament</h4>
-          <p id="modalTemp"></p>
-
-          <h4>Tank mates</h4>
-          <p id="modalMates"></p>
-        </div>
-
-        <div class="col">
-          <h4>Care guide</h4>
-          <ul class="care">
-            <li><strong>Tank size:</strong> <span id="modalTank"></span></li>
-            <li><strong>Temperature:</strong> <span id="modalTempRange"></span></li>
-            <li><strong>pH:</strong> <span id="modalPH"></span></li>
-            <li><strong>Diet:</strong> <span id="modalDiet"></span></li>
-            <li><strong>Notes:</strong> <span id="modalNotes"></span></li>
-          </ul>
-
-          <div class="callout">
-            <strong>Acclimation tip:</strong> Float the bag for 15–20 mins, then gradually add tank water before release.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
+  <!-- Footer -->
   <footer class="footer">
-    <div class="container footer-inner">
+    <div class="wrap footer__inner">
       <div>
-        <div class="footer-brand">Kong Exotics</div>
-        <div class="footer-small">Exotic fish listings + care info. Built for quick WhatsApp orders.</div>
+        <div class="footer__brand">Kong Exotics</div>
+        <div class="footer__small">© <span id="year"></span> Kong Exotics. Built for quick WhatsApp sales.</div>
       </div>
-      <div class="footer-links">
-        <a href="#gallery">Gallery</a>
+      <div class="footer__links">
+        <a href="#shop">Fish</a>
         <a href="#how">How it works</a>
-        <a href="#faq">FAQ</a>
+        <a href="#care">Care</a>
       </div>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- Modal -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+
+    <div class="modal__panel" role="document">
+      <button class="modal__close" aria-label="Close" data-close>✕</button>
+
+      <div class="modal__grid">
+        <div class="modal__media">
+          <img id="modalImg" alt="" />
+          <div class="modal__chips" id="modalChips"></div>
+        </div>
+
+        <div class="modal__content">
+          <h3 id="modalTitle"></h3>
+          <p class="modal__price" id="modalPrice"></p>
+          <p class="modal__desc" id="modalDesc"></p>
+
+          <div class="care">
+            <div class="care__title">Care Guide</div>
+            <div class="care__grid" id="modalCare"></div>
+          </div>
+
+          <div class="compat">
+            <div class="compat__title">Temperament & Compatibility</div>
+            <p id="modalCompat"></p>
+          </div>
+
+          <div class="modal__actions">
+            <a class="btn btn--whatsapp btn--big" id="modalWhatsApp" href="#" rel="noopener">
+              <span class="waDot" aria-hidden="true"></span>
+              WhatsApp to reserve this fish
+            </a>
+            <button class="btn btn--ghost" data-close>Back to listings</button>
+          </div>
+
+          <p class="tiny">
+            Availability changes quickly — WhatsApp is the fastest way to confirm.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
 </body>
 </html>
