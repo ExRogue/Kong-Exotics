@@ -1,8 +1,8 @@
 // ====== CONFIG ======
-const WHATSAPP_NUMBER_E164 = "447700900123"; // <-- REPLACE with your dad's number, digits only (UK example)
-const WHATSAPP_DEFAULT_MSG = "Hi Kong Exotics! I'm interested in your fish listings. Can I reserve one?";
+const WHATSAPP_NUMBER_E164 = "447700900123"; // <-- REPLACE with your dad’s number (digits only, no +)
+const WHATSAPP_DEFAULT_MSG = "Hi Kong Exotics! I’d like to check availability and reserve a fish.";
 
-// ====== DATA (12 dummy listings) ======
+// ====== DATA (9 dummy listings) ======
 const fishData = [
   {
     id: "discus-red-turquoise",
@@ -11,49 +11,17 @@ const fishData = [
     priceGBP: 75,
     size: "10–12 cm",
     featured: true,
-    image:
-      "https://images.unsplash.com/photo-1544551763-cede2d235d03?auto=format&fit=crop&w=1200&q=80",
-    short: "Show-stopping colour. Best for stable, mature tanks.",
-    description:
-      "A classic centrepiece discus with vivid patterning. Discus thrive in stable, warm water and reward good husbandry with calm, confident behaviour and impressive colour.",
+    image: "https://images.unsplash.com/photo-1544551763-cede2d235d03?auto=format&fit=crop&w=1200&q=80",
+    description: "A classic centrepiece discus with vivid patterning. Best in stable, mature tanks with excellent filtration.",
     care: {
-      "Recommended tank": "250L+ (larger is better; keep in groups)",
+      "Recommended tank": "250L+",
       "Temperature": "28–30°C",
-      "pH": "6.0–7.2 (stable)",
-      "Diet": "Quality pellets, frozen foods, occasional live treats",
-      "Difficulty": "Intermediate",
-      "Min group": "5–6 recommended",
+      "pH": "6.0–7.2",
+      "Diet": "Quality pellets + frozen",
+      "Difficulty": "Intermediate"
     },
-    compatibility:
-      "Best with peaceful, warm-water tankmates. Avoid fin-nippers and aggressive cichlids. Keep water pristine; discus hate drama and bad water equally.",
-    tags: ["Featured", "Peaceful", "Warm water"],
+    compatibility: "Peaceful warm-water tankmates. Avoid fin-nippers."
   },
-
-  {
-    id: "koi-show-grade",
-    name: "Koi — Show Grade",
-    category: "freshwater",
-    priceGBP: 180,
-    size: "18–22 cm",
-    featured: true,
-    image:
-      "https://images.unsplash.com/photo-1599819811279-d3b1b6b1f6e4?auto=format&fit=crop&w=1200&q=80",
-    short: "Bold patterning for ponds or very large systems.",
-    description:
-      "High-impact koi with strong pattern definition. Ideal for established ponds with excellent filtration. Koi are long-lived and grow quickly in the right conditions.",
-    care: {
-      "Recommended tank": "Pond / 1,000L+ system",
-      "Temperature": "10–25°C (seasonal tolerant)",
-      "pH": "7.0–8.5",
-      "Diet": "Koi pellets, occasional vegetables, seasonal feeding",
-      "Difficulty": "Intermediate",
-      "Min group": "Pairs or groups in ponds",
-    },
-    compatibility:
-      "Generally peaceful but will outgrow most tanks. Keep with other pond fish of suitable size. Protect from predators and maintain high oxygenation.",
-    tags: ["Featured", "Pond", "Large"],
-  },
-
   {
     id: "clownfish-designer-pair",
     name: "Designer Clownfish — Pair",
@@ -61,24 +29,35 @@ const fishData = [
     priceGBP: 95,
     size: "5–7 cm",
     featured: true,
-    image:
-      "https://images.unsplash.com/photo-1582966772680-860e372bb558?auto=format&fit=crop&w=1200&q=80",
-    short: "Hardy marine favourite with huge personality.",
-    description:
-      "A striking designer morph clownfish pair. Great for reef setups and beginners (with proper marine basics). Known for their bold character and fascinating behaviour.",
+    image: "https://images.unsplash.com/photo-1582966772680-860e372bb558?auto=format&fit=crop&w=1200&q=80",
+    description: "A striking designer morph clownfish pair. Hardy with stable marine parameters.",
     care: {
-      "Recommended tank": "100L+ (stable marine/reef)",
+      "Recommended tank": "100L+",
       "Temperature": "24–26°C",
       "Salinity": "1.024–1.026 SG",
-      "Diet": "Marine pellets, frozen mysis/brine, varied foods",
-      "Difficulty": "Beginner+",
-      "Min group": "Pair recommended",
+      "Diet": "Marine pellets + frozen",
+      "Difficulty": "Beginner+"
     },
-    compatibility:
-      "Generally peaceful in pairs. Can be territorial around their chosen 'home'. Avoid mixing with aggressive damsels unless you enjoy soap operas.",
-    tags: ["Featured", "Reef-safe", "Hardy"],
+    compatibility: "Generally peaceful in pairs; can be territorial around their chosen spot."
   },
-
+  {
+    id: "yellow-tang",
+    name: "Yellow Tang",
+    category: "marine",
+    priceGBP: 120,
+    size: "10–12 cm",
+    featured: false,
+    image: "https://images.unsplash.com/photo-1559757175-5700dde67536?auto=format&fit=crop&w=1200&q=80",
+    description: "Iconic reef grazer. Needs swimming space, stable salinity, and frequent greens (nori).",
+    care: {
+      "Recommended tank": "300L+",
+      "Temperature": "24–26°C",
+      "Salinity": "1.024–1.026 SG",
+      "Diet": "Nori + herbivore pellets",
+      "Difficulty": "Intermediate"
+    },
+    compatibility: "Can be territorial with other tangs; best introduced carefully."
+  },
   {
     id: "betta-halfmoon",
     name: "Betta — Halfmoon Male",
@@ -86,24 +65,17 @@ const fishData = [
     priceGBP: 22,
     size: "6–7 cm",
     featured: false,
-    image:
-      "https://images.unsplash.com/photo-1520301255226-bf5f144451a3?auto=format&fit=crop&w=1200&q=80",
-    short: "Solo stunner. Keep warm and calm.",
-    description:
-      "Halfmoon bettas are famous for dramatic fins and vibrant colour. They do best in a heated, filtered setup with gentle flow and plenty of resting spots.",
+    image: "https://images.unsplash.com/photo-1520301255226-bf5f144451a3?auto=format&fit=crop&w=1200&q=80",
+    description: "Solo stunner with dramatic fins. Prefers warm water, gentle flow, and plenty of resting spots.",
     care: {
-      "Recommended tank": "20L+ heated and filtered",
+      "Recommended tank": "20L+",
       "Temperature": "25–28°C",
       "pH": "6.5–7.5",
-      "Diet": "Betta pellets, frozen bloodworm, daphnia",
-      "Difficulty": "Beginner",
-      "Min group": "Solo (male)",
+      "Diet": "Betta pellets + frozen",
+      "Difficulty": "Beginner"
     },
-    compatibility:
-      "Males must be kept alone (or with very careful tankmate selection). Avoid fin-nippers and anything that looks like another betta.",
-    tags: ["Beginner", "Solo", "Colour pop"],
+    compatibility: "Male should be kept alone (generally). Avoid fin-nippers."
   },
-
   {
     id: "electric-blue-acara",
     name: "Electric Blue Acara",
@@ -111,49 +83,17 @@ const fishData = [
     priceGBP: 28,
     size: "8–10 cm",
     featured: false,
-    image:
-      "https://images.unsplash.com/photo-1518991791750-749fdb00bc63?auto=format&fit=crop&w=1200&q=80",
-    short: "A calmer cichlid with serious shimmer.",
-    description:
-      "Electric Blue Acaras bring stunning colour without the full ‘cichlid chaos’ reputation. Great in a community of robust, compatible fish in the right tank size.",
+    image: "https://images.unsplash.com/photo-1518991791750-749fdb00bc63?auto=format&fit=crop&w=1200&q=80",
+    description: "Shimmering blue cichlid that’s calmer than many cichlids — with the right tank size and mates.",
     care: {
       "Recommended tank": "200L+",
       "Temperature": "24–28°C",
       "pH": "6.5–7.5",
-      "Diet": "Pellets, frozen foods, occasional veggies",
-      "Difficulty": "Beginner+",
-      "Min group": "Pair or single",
+      "Diet": "Pellets + frozen foods",
+      "Difficulty": "Beginner+"
     },
-    compatibility:
-      "Semi-aggressive, especially during breeding. Avoid tiny fish. Works well with larger tetras, catfish, and other mild-mannered cichlids.",
-    tags: ["Shimmer", "Cichlid", "Community+"],
+    compatibility: "Semi-aggressive during breeding. Avoid tiny fish."
   },
-
-  {
-    id: "african-cichlid-peacock",
-    name: "Peacock Cichlid (Aulonocara)",
-    category: "freshwater",
-    priceGBP: 26,
-    size: "9–11 cm",
-    featured: false,
-    image:
-      "https://images.unsplash.com/photo-1527192491265-7e15c55b1ed2?auto=format&fit=crop&w=1200&q=80",
-    short: "Colourful, active — needs a Malawi-style setup.",
-    description:
-      "Peacock cichlids are bright, active fish best kept in appropriately stocked African cichlid aquariums with rockwork and strong filtration.",
-    care: {
-      "Recommended tank": "250L+",
-      "Temperature": "24–27°C",
-      "pH": "7.8–8.6",
-      "Diet": "High quality cichlid pellets; avoid fatty foods",
-      "Difficulty": "Intermediate",
-      "Min group": "Harem-style stocking",
-    },
-    compatibility:
-      "Keep with other Malawi species of similar temperament. Avoid mixing with peaceful community fish. If you want calm vibes, pick a tetra. 🙂",
-    tags: ["Active", "Malawi", "Hard water"],
-  },
-
   {
     id: "german-blue-ram",
     name: "German Blue Ram",
@@ -161,24 +101,17 @@ const fishData = [
     priceGBP: 18,
     size: "4–6 cm",
     featured: false,
-    image:
-      "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=1200&q=80",
-    short: "Small, gorgeous, but likes stable warm water.",
-    description:
-      "A popular dwarf cichlid known for iridescent blues and gentle behaviour. Sensitive to water quality; best in mature tanks.",
+    image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=1200&q=80",
+    description: "A colourful dwarf cichlid that thrives in warm, clean, stable water. Sensitive to poor water quality.",
     care: {
       "Recommended tank": "80L+",
       "Temperature": "26–30°C",
       "pH": "5.5–7.0",
-      "Diet": "Small pellets, frozen foods, live treats",
-      "Difficulty": "Intermediate",
-      "Min group": "Pair recommended",
+      "Diet": "Small pellets + frozen",
+      "Difficulty": "Intermediate"
     },
-    compatibility:
-      "Peaceful with calm community fish. Avoid aggressive tankmates. Keep nitrates low and you’ll be rewarded with fantastic colour.",
-    tags: ["Dwarf cichlid", "Peaceful", "Warm water"],
+    compatibility: "Peaceful community fish only. Keep nitrates low."
   },
-
   {
     id: "cardinal-tetra-school",
     name: "Cardinal Tetra (School of 10)",
@@ -186,76 +119,175 @@ const fishData = [
     priceGBP: 35,
     size: "3–4 cm",
     featured: false,
-    image:
-      "https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=1200&q=80",
-    short: "Classic neon-red-blue schooling fish.",
-    description:
-      "Cardinals look best in a proper group and bring instant movement to planted tanks. Prefer softer, warmer water and subdued lighting.",
+    image: "https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=1200&q=80",
+    description: "A classic planted-tank schooling fish. Looks best in a proper group with softer, warmer water.",
     care: {
-      "Recommended tank": "60L+ planted",
+      "Recommended tank": "60L+",
       "Temperature": "24–28°C",
       "pH": "5.5–7.2",
-      "Diet": "Micro pellets, frozen foods",
-      "Difficulty": "Beginner+",
-      "Min group": "10+ ideal",
+      "Diet": "Micro pellets + frozen",
+      "Difficulty": "Beginner+"
     },
-    compatibility:
-      "Great with peaceful tankmates. Avoid large predatory fish (they’ll see these as snacks, not friends).",
-    tags: ["Schooling", "Planted", "Peaceful"],
+    compatibility: "Great with peaceful fish. Avoid predators."
   },
-
   {
-    id: "pleco-bristlenose",
+    id: "bristlenose-pleco",
     name: "Bristlenose Pleco",
     category: "freshwater",
     priceGBP: 16,
     size: "6–9 cm",
     featured: false,
-    image:
-      "https://images.unsplash.com/photo-1520763185298-1b434c919102?auto=format&fit=crop&w=1200&q=80",
-    short: "Hard-working algae grazer (still needs feeding!).",
-    description:
-      "A popular, manageable pleco species. Great at grazing but should still receive dedicated foods and driftwood for digestion.",
+    image: "https://images.unsplash.com/photo-1520763185298-1b434c919102?auto=format&fit=crop&w=1200&q=80",
+    description: "Hard-working algae grazer (still needs proper food). Provide driftwood and hiding spaces.",
     care: {
       "Recommended tank": "80L+",
       "Temperature": "23–27°C",
       "pH": "6.5–7.8",
-      "Diet": "Algae wafers, veg, driftwood, pellets",
-      "Difficulty": "Beginner",
-      "Min group": "Single or pair (space-dependent)",
+      "Diet": "Algae wafers + veg",
+      "Difficulty": "Beginner"
     },
-    compatibility:
-      "Generally peaceful. Provide hiding spaces. Don’t expect it to clean the tank for you — it’s a fish, not a staff member.",
-    tags: ["Hardy", "Bottom-dweller", "Useful"],
+    compatibility: "Generally peaceful. Provide caves/hides."
   },
-
   {
-    id: "mangrove-snapper-brackish",
-    name: "Mangrove Jack (Brackish Juvenile)",
-    category: "brackish",
-    priceGBP: 55,
-    size: "10–12 cm",
-    featured: false,
-    image:
-      "https://images.unsplash.com/photo-1504472478235-9bc48ba4d60f?auto=format&fit=crop&w=1200&q=80",
-    short: "Predatory brackish species — grows large.",
-    description:
-      "A powerful brackish fish best suited to experienced keepers with large systems. Juveniles can start brackish and often require more marine conditions as they mature.",
+    id: "koi-show-grade",
+    name: "Koi — Show Grade",
+    category: "freshwater",
+    priceGBP: 180,
+    size: "18–22 cm",
+    featured: true,
+    image: "https://images.unsplash.com/photo-1599819811279-d3b1b6b1f6e4?auto=format&fit=crop&w=1200&q=80",
+    description: "Bold patterning for ponds or very large systems. Koi grow quickly and need serious filtration and oxygenation.",
     care: {
-      "Recommended tank": "400L+ (adult much larger)",
-      "Temperature": "24–28°C",
-      "pH": "7.5–8.5",
-      "Salinity": "Brackish (species/age dependent)",
-      "Diet": "Meaty foods, quality predator pellets",
-      "Difficulty": "Advanced",
+      "Recommended tank": "Pond / 1,000L+ system",
+      "Temperature": "10–25°C",
+      "pH": "7.0–8.5",
+      "Diet": "Koi pellets + seasonal feeding",
+      "Difficulty": "Intermediate"
     },
-    compatibility:
-      "Not community-safe. Will eat smaller fish. Best in species or predator setups with appropriate tankmates.",
-    tags: ["Brackish", "Predator", "Advanced"],
-  },
+    compatibility: "Peaceful but large. Keep with suitable pond fish only."
+  }
+];
 
-  {
-    id: "mandarin-dragonet",
-    name: "Mandarin Dragonet",
-    category: "marine",
-   
+// ====== HELPERS ======
+const £ = (n) => `£${Number(n).toFixed(0)}`;
+const waLink = (text) => `https://wa.me/${WHATSAPP_NUMBER_E164}?text=${encodeURIComponent(text)}`;
+
+// ====== RENDER CARDS ======
+const cardsEl = document.getElementById("cards");
+
+function renderCards() {
+  cardsEl.innerHTML = "";
+
+  fishData.forEach((f) => {
+    const card = document.createElement("article");
+    card.className = "card";
+    card.tabIndex = 0;
+    card.setAttribute("role", "button");
+    card.setAttribute("aria-label", `Open details for ${f.name}`);
+
+    card.innerHTML = `
+      <div class="card__img" style="background-image:url('${f.image}')"></div>
+      <div class="card__body">
+        <div class="card__title">${f.name}</div>
+        <div class="card__meta">
+          <div class="price">${£(f.priceGBP)}</div>
+          <div class="size">${f.size}</div>
+        </div>
+      </div>
+    `;
+
+    const open = () => openModal(f.id);
+    card.addEventListener("click", open);
+    card.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        open();
+      }
+    });
+
+    cardsEl.appendChild(card);
+  });
+}
+
+// ====== MODAL ======
+const modal = document.getElementById("modal");
+const modalImg = document.getElementById("modalImg");
+const modalTitle = document.getElementById("modalTitle");
+const modalPrice = document.getElementById("modalPrice");
+const modalDesc = document.getElementById("modalDesc");
+const modalCare = document.getElementById("modalCare");
+const modalCompat = document.getElementById("modalCompat");
+const modalChips = document.getElementById("modalChips");
+const modalWhatsApp = document.getElementById("modalWhatsApp");
+
+let lastFocusedEl = null;
+
+function openModal(id) {
+  const f = fishData.find((x) => x.id === id);
+  if (!f) return;
+
+  lastFocusedEl = document.activeElement;
+
+  modalImg.src = f.image;
+  modalImg.alt = f.name;
+  modalTitle.textContent = f.name;
+  modalPrice.textContent = `${£(f.priceGBP)} • Size: ${f.size}`;
+  modalDesc.textContent = f.description;
+
+  modalChips.innerHTML = `
+    <span class="badge">${String(f.category).toUpperCase()}</span>
+    ${f.featured ? `<span class="badge">FEATURED</span>` : ""}
+  `;
+
+  modalCare.innerHTML = "";
+  Object.entries(f.care || {}).forEach(([k, v]) => {
+    const item = document.createElement("div");
+    item.className = "careItem";
+    item.innerHTML = `<div class="careItem__k">${k}</div><div class="careItem__v">${v}</div>`;
+    modalCare.appendChild(item);
+  });
+
+  modalCompat.textContent = f.compatibility || "";
+
+  const msg =
+    `Hi Kong Exotics! I'd like to reserve: ${f.name} (${£(f.priceGBP)}, ${f.size}). Is it available?\n\n` +
+    `My tank details:\n- Tank size:\n- Temperature:\n- pH:\n- Current fish:\n`;
+
+  modalWhatsApp.href = waLink(msg);
+
+  modal.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+
+  const closeBtn = modal.querySelector("[data-close]");
+  closeBtn && closeBtn.focus();
+}
+
+function closeModal() {
+  modal.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
+  if (lastFocusedEl && lastFocusedEl.focus) lastFocusedEl.focus();
+}
+
+modal.addEventListener("click", (e) => {
+  if (e.target.matches("[data-close]")) closeModal();
+});
+
+document.addEventListener("keydown", (e) => {
+  if (modal.getAttribute("aria-hidden") === "false" && e.key === "Escape") closeModal();
+});
+
+// ====== WHATSAPP CTAs ======
+function wireWhatsAppLinks() {
+  const links = [
+    document.getElementById("waTop"),
+    document.getElementById("waHero"),
+    document.getElementById("waBottom"),
+  ].filter(Boolean);
+
+  links.forEach((a) => (a.href = waLink(WHATSAPP_DEFAULT_MSG)));
+}
+
+// ====== INIT ======
+document.getElementById("year").textContent = new Date().getFullYear();
+wireWhatsAppLinks();
+renderCards();
