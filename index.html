@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Kong Exotics — Premium Exotic Fish</title>
-  <meta name="description" content="Kong Exotics — colourful, premium exotic fish. Browse availability and WhatsApp to order." />
+  <meta name="description" content="Kong Exotics — exotic fish listings. WhatsApp to reserve." />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%90%9F%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
   <link rel="stylesheet" href="./styles.css" />
@@ -26,7 +26,6 @@
 
       <nav class="nav">
         <a href="#shop">Fish</a>
-        <a href="#how">How it works</a>
         <a href="#care">Care promise</a>
         <a class="btn btn--whatsapp" id="waTop" href="#" rel="noopener">WhatsApp</a>
       </nav>
@@ -41,8 +40,7 @@
           <p class="pill">NEW STOCK WEEKLY • HAND-PICKED</p>
           <h1>Exotic fish with a <span class="grad">restaurant-fresh</span> vibe.</h1>
           <p class="lead">
-            Browse what’s available, tap a fish for the full care guide, then message us on WhatsApp to reserve.
-            No complicated checkout. Just quick, human service.
+            Browse today’s selection. Tap a fish for details and care guidance, then message us on WhatsApp to reserve.
           </p>
 
           <div class="hero__cta">
@@ -55,16 +53,16 @@
 
           <div class="hero__meta">
             <div class="metaCard">
-              <div class="metaCard__big">12</div>
-              <div class="metaCard__small">Dummy listings to start</div>
-            </div>
-            <div class="metaCard">
-              <div class="metaCard__big">Fast</div>
-              <div class="metaCard__small">Click fish for care guide</div>
+              <div class="metaCard__big">9</div>
+              <div class="metaCard__small">Listings</div>
             </div>
             <div class="metaCard">
               <div class="metaCard__big">Simple</div>
-              <div class="metaCard__small">Order via WhatsApp</div>
+              <div class="metaCard__small">Tap → read → WhatsApp</div>
+            </div>
+            <div class="metaCard">
+              <div class="metaCard__big">Fast</div>
+              <div class="metaCard__small">Reserve in minutes</div>
             </div>
           </div>
         </div>
@@ -73,7 +71,7 @@
           <div class="plate">
             <div class="plate__shine"></div>
             <div class="plate__img"></div>
-            <div class="plate__badge">⭐ Premium picks</div>
+            <div class="plate__badge">⭐ Today’s picks</div>
           </div>
         </div>
       </div>
@@ -81,40 +79,12 @@
       <div class="hero__wave" aria-hidden="true"></div>
     </section>
 
-    <!-- Controls -->
+    <!-- Listings header (NO filters) -->
     <section class="controls" id="shop">
       <div class="wrap controls__inner">
         <div>
           <h2 class="sectionTitle">Today’s Fish</h2>
-          <p class="sectionSub">Tap a listing for full details, care guide, and suitability.</p>
-        </div>
-
-        <div class="toolbar">
-          <label class="field">
-            <span class="field__label">Search</span>
-            <input id="search" type="search" placeholder="e.g., clownfish, discus, cichlid…" autocomplete="off" />
-          </label>
-
-          <label class="field">
-            <span class="field__label">Category</span>
-            <select id="filterCategory">
-              <option value="all">All</option>
-              <option value="freshwater">Freshwater</option>
-              <option value="marine">Marine</option>
-              <option value="brackish">Brackish</option>
-            </select>
-          </label>
-
-          <label class="field">
-            <span class="field__label">Sort</span>
-            <select id="sortBy">
-              <option value="featured">Featured</option>
-              <option value="priceAsc">Price (low → high)</option>
-              <option value="priceDesc">Price (high → low)</option>
-              <option value="sizeAsc">Size (small → large)</option>
-              <option value="sizeDesc">Size (large → small)</option>
-            </select>
-          </label>
+          <p class="sectionSub">Tap a listing for details and care guidance.</p>
         </div>
       </div>
     </section>
@@ -123,65 +93,6 @@
     <section class="grid">
       <div class="wrap">
         <div id="cards" class="cards" aria-live="polite"></div>
-
-        <div class="grid__note">
-          <div class="noteCard">
-            <div class="noteCard__icon" aria-hidden="true">🧪</div>
-            <div>
-              <div class="noteCard__title">Care-first approach</div>
-              <div class="noteCard__text">We’ll ask about tank size and parameters before confirming. No fish goes to a bad home — sorry, not sorry.</div>
-            </div>
-          </div>
-
-          <div class="noteCard">
-            <div class="noteCard__icon" aria-hidden="true">📦</div>
-            <div>
-              <div class="noteCard__title">Collection / Delivery</div>
-              <div class="noteCard__text">Add your collection/delivery details here later. For now it’s WhatsApp-based to keep it simple.</div>
-            </div>
-          </div>
-
-          <div class="noteCard">
-            <div class="noteCard__icon" aria-hidden="true">💬</div>
-            <div>
-              <div class="noteCard__title">Reserve fast</div>
-              <div class="noteCard__text">See something you like? Tap “WhatsApp to reserve” in the fish details.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- How it works -->
-    <section class="info" id="how">
-      <div class="wrap">
-        <h2 class="sectionTitle">How it works</h2>
-
-        <div class="steps">
-          <div class="step">
-            <div class="step__num">1</div>
-            <div class="step__body">
-              <div class="step__title">Browse today’s listings</div>
-              <div class="step__text">Use search and filters to find the right fish for your setup.</div>
-            </div>
-          </div>
-
-          <div class="step">
-            <div class="step__num">2</div>
-            <div class="step__body">
-              <div class="step__title">Tap for the full care guide</div>
-              <div class="step__text">You’ll see tank size, temperature, pH range, diet, temperament, and compatability notes.</div>
-            </div>
-          </div>
-
-          <div class="step">
-            <div class="step__num">3</div>
-            <div class="step__body">
-              <div class="step__title">Message on WhatsApp</div>
-              <div class="step__text">Reserve instantly. We’ll confirm availability and guide you on best practice.</div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -191,13 +102,13 @@
         <div class="promise__card">
           <h2>Our care promise</h2>
           <p>
-            Fish aren’t décor — they’re pets with opinions. We’ll always prioritise appropriate setups,
+            Fish aren’t décor — they’re pets. We’ll always prioritise appropriate setups,
             stable water parameters, and responsible stocking.
           </p>
           <ul class="ticks">
             <li>Clear care guides per fish</li>
-            <li>Compatibility notes (so your tank doesn’t turn into fight night)</li>
-            <li>Practical advice on cycling, diet, and maintenance</li>
+            <li>Compatibility notes</li>
+            <li>Advice on acclimation, diet, and maintenance</li>
           </ul>
 
           <a class="btn btn--whatsapp btn--big" id="waBottom" href="#" rel="noopener">
@@ -206,7 +117,7 @@
           </a>
 
           <p class="tiny">
-            Tip: replace the dummy phone number in <code>script.js</code> with your dad’s WhatsApp number.
+            Replace the WhatsApp number in <code>script.js</code>.
           </p>
         </div>
 
@@ -217,10 +128,10 @@
           <div class="bubble b4"></div>
           <div class="menu">
             <div class="menu__title">Today’s “specials”</div>
-            <div class="menu__item">Electric Blue Acara</div>
+            <div class="menu__item">Discus — Red Turquoise</div>
             <div class="menu__item">Designer Clownfish Pair</div>
-            <div class="menu__item">Discus (Red Turquoise)</div>
-            <div class="menu__item">Koi (Show Grade)</div>
+            <div class="menu__item">Electric Blue Acara</div>
+            <div class="menu__item">Yellow Tang</div>
           </div>
         </div>
       </div>
@@ -232,11 +143,10 @@
     <div class="wrap footer__inner">
       <div>
         <div class="footer__brand">Kong Exotics</div>
-        <div class="footer__small">© <span id="year"></span> Kong Exotics. Built for quick WhatsApp sales.</div>
+        <div class="footer__small">© <span id="year"></span> Kong Exotics.</div>
       </div>
       <div class="footer__links">
         <a href="#shop">Fish</a>
-        <a href="#how">How it works</a>
         <a href="#care">Care</a>
       </div>
     </div>
